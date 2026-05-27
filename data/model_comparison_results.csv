@@ -1,0 +1,4 @@
+Model,Features,R²,RMSE,MAE,Regularisation
+M1: Simple Log-Log,ln(Population),0.0011,0.406594,0.296602,None (OLS)
+M2: Multiple OLS + COVID,ln(Pop) + Time + Pop_Growth + COVID,0.6266,0.248593,0.148318,None (OLS)
+M3: Ridge (CV-tuned),ln(Pop) + Time + Pop_Growth + COVID + Month,0.6269,0.248496,0.147922,L2 (λ=0.534)
